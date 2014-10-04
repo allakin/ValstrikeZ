@@ -21,7 +21,7 @@ textarea:active {
 }
 
 .row,
-.row2{
+.row2 {
   @include clearfix();
   margin-left: -15px;
   margin-right: -15px;
@@ -49,6 +49,7 @@ textarea:active {
     position: relative;
   }
 }
+
 .col-xs-1,
 .col-xs-2,
 .col-xs-3,
@@ -66,6 +67,7 @@ textarea:active {
   padding-right: 15px;
   position: relative;
 }
+
 .col-xs-1 {
   width: 8.3333333333%;
 }
@@ -112,4 +114,51 @@ textarea:active {
 
 .col-xs-12 {
   width: 100%;
+}
+
+.line-border {
+  margin-top: 120px;
+  position: relative;
+  height: 2px;
+  background: $white;
+  .box-green {
+    position: absolute;
+    width: 160px;
+    height: 8px;
+    background: $green;
+    left: 50%;
+    margin-left: -80px;
+    top: -3px;
+  }
+}
+
+.btn{
+  padding: 10px 32px;
+  background: $blue-gray;
+  border: 0px;
+  font-size: 16px;
+  font-family: $black;
+  display:inline-block;
+  &:hover{
+    background: lighten($blue-gray, 10%);
+  }
+}
+
+.btn-white{
+  color: $white;
+}
+
+.btn-green{
+  color: $green;
+}
+
+.btn-wrapper{
+  display: table;
+  margin: 10px auto 0px;
+  .btn{
+    margin-right: 20px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
 }
