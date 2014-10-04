@@ -1,0 +1,590 @@
+//import compass mixin
+@import "compass/css3";
+@import "compass/reset";
+@import "meta/mixin";
+@import "meta/_variable";
+@import "meta/fonts";
+@import "meta/base";
+@import "meta/jquery.bxslider";
+
+.main {
+  background: url("../img/bg-header.jpg");
+  .container {
+    padding-top: 30px;
+    .main-menu {
+      .menu {
+        h1 {
+          font-size: 50px;
+          font-family: $italic;
+          color: $blue-gray;
+          margin-bottom: 22px;
+          margin-top: 30px;
+        }
+        span {
+          color: $white;
+        }
+        .col-xs-6 {
+          @include clearfix();
+          width: 50%;
+          .active {
+            background: $green;
+          }
+          li {
+            float: right;
+            padding: 43px 13px;
+            &:last-child {
+              margin-right: 0px;
+            }
+            a {
+              font-size: 16px;
+              font-family: $italic;
+              color: $blue-gray;
+              text-transform: uppercase;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .header-image {
+      background: url("../img/bg-header-image.jpg") no-repeat;
+      height: 491px;
+      .text {
+        float: right;
+        h2 {
+          font-size: 106px;
+          font-family: $italic;
+          color: $white;
+          float: right;
+          margin-top: 90px;
+          margin-right: 90px;
+          span {
+            color: $blue-gray;
+          }
+        }
+        h4 {
+          font-size: 25px;
+          font-family: $italic;
+          color: $blue-gray;
+          margin-top: 30px;
+          margin-left: 40px;
+        }
+        p {
+          font-size: 18px;
+          font-family: $regular;
+          color: $white;
+          margin-left: 86px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+  background: $blue-gray;
+  .image-wrap {
+    position: relative;
+    &:hover .overlay {
+      display: block;
+    }
+    .overlay {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: $blue-gray;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .container {
+    h3 {
+      font-size: 30px;
+      font-family: $italic;
+      color: $green;
+      text-transform: uppercase;
+      display: block;
+      text-align: center;
+      margin-top: 130px;
+    }
+    p {
+      font-size: 16px;
+      font-family: $regular;
+      color: $white;
+      margin-top: 30px;
+    }
+    h5 {
+      font-size: 18px;
+      font-family: $italic;
+      color: $green;
+      margin-top: 40px;
+    }
+    .row {
+      margin-top: 25px;
+      margin-bottom: 120px;
+      padding: 10px 0;
+      .green-comment {
+        p {
+          padding: 12px 0px;
+          font-size: 13px;
+          font-family: $italic;
+          text-align: center;
+          margin-top: -3px;
+          color: $blue-gray;
+          background: $green;
+          height: 36px;
+        }
+      }
+    }
+    .border-image {
+      margin-top: 120px;
+    }
+  }
+}
+
+.works {
+  background: $blue-gray;
+  h3 {
+    font-size: 30px;
+    font-family: $italic;
+    color: $green;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 130px;
+  }
+  p {
+    font-size: 16px;
+    font-family: $regular;
+    color: $white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  img {
+    width: 100%;
+  }
+  .border-image {
+    margin-top: 120px;
+  }
+}
+
+.blog {
+  background: $blue-gray;
+  h3 {
+    font-size: 30px;
+    font-family: $italic;
+    color: $green;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 130px;
+  }
+  p {
+    font-size: 16px;
+    font-family: $regular;
+    color: $white;
+    margin-top: 30px;
+    //margin-bottom: 34px;
+  }
+  .green-line {
+    background: $green;
+    width: 10px;
+    display: table-cell;
+  }
+  .blog-bg {
+    margin-top: 30px;
+    display: table;
+  }
+  .text {
+    background: $white;
+    padding-bottom: 12px;
+    @include clearfix();
+    span {
+      margin-top: 18px;
+      font-size: 15px;
+      font-family: $italic;
+      color: $blue-gray;
+      padding: 13px;
+      background: $green;
+      float: left;
+    }
+    h5 {
+      font-size: 17px;
+      font-family: $bold;
+      color: $blue-gray;
+      margin-top: 31px;
+      margin-left: 10px;
+      display: inline-block;
+    }
+    p {
+      font-size: 15px;
+      font-family: $regular;
+      color: $blue-gray;
+      margin-left: 30px;
+      display: inline-block;
+      margin-top: 20px;
+      padding-right: 10px;
+    }
+    a {
+      float: right;
+      padding: 9px;
+      background: $green;
+      font-size: 10px;
+      font-family: $bold;
+      color: $blue-gray;
+      margin-top: 20px;
+      margin-right: 13px;
+      text-decoration: none;
+      &:hover {
+        background: $blue-gray;
+        color: $white;
+      }
+    }
+  }
+  .border-image {
+    margin-top: 120px;
+  }
+}
+
+.clients {
+  background: $blue-gray;
+  padding-bottom: 120px;
+  h3 {
+    font-size: 30px;
+    font-family: $italic;
+    color: $green;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 130px;
+  }
+  p {
+    font-size: 16px;
+    font-family: $regular;
+    color: $white;
+    margin-top: 30px;
+  }
+  .row {
+    margin-top: 35px;
+    p {
+      color: $green;
+      text-align: center;
+      font-size: 14px;
+      font-family: $bold;
+      margin-top: 6px;
+    }
+  }
+}
+
+.end {
+  background: url("../img/bg-footer.jpg") repeat-x;
+  height: 550px;
+  h3 {
+    font-size: 30px;
+    font-family: $italic;
+    color: $blue-gray;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 130px;
+  }
+  .row {
+    margin-top: 30px;
+  }
+  p {
+    font-size: 15px;
+    font-family: $regular;
+    color: $blue-gray;
+  }
+  .address-info {
+    float: left;
+    display: inline-block;
+    margin-top: 22px;
+    h6 {
+      font-size: 16px;
+      font-family: $bold;
+      color: $blue-gray;
+    }
+  }
+  .contact-info {
+    margin-left: 40px;
+    display: inline-block;
+    margin-top: 22px;
+    p {
+      font-size: 14px;
+      font-family: $regular;
+      color: $blue-gray;
+    }
+  }
+  .forms {
+    textarea {
+      background: $blue-gray;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 12px;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+      text-indent: 12px;
+      background: $blue-gray;
+      border: 0px;
+      color: $green;
+      font-family: $bold;
+    }
+    button {
+      padding: 10px 32px;
+      background: $blue-gray;
+      border: 0px;
+      font-size: 16px;
+      font-family: $black;
+      color: $green;
+    }
+  }
+}
+
+.copyright {
+  background: $white;
+  padding-top: 22px;
+  padding-bottom: 82px;
+  .col-xs-6 {
+    padding-right: 0px;
+    .icon-social-networks {
+      float: right;
+      margin-left: 13px;
+    }
+  }
+}
+
+header {
+  a {
+    text-decoration: none;
+    h1 {
+      font-size: 50px;
+      font-family: $italic;
+      color: $blue-gray;
+      margin-bottom: 22px;
+      margin-top: 30px;
+    }
+    span {
+      color: $green;
+    }
+  }
+  .col-xs-6 {
+    @include clearfix();
+    width: 50%;
+    .active {
+      background: $green;
+    }
+    li {
+      float: right;
+      padding: 43px 13px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      a {
+        font-size: 16px;
+        font-family: $italic;
+        color: $blue-gray;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+  .line-border {
+    background: $green;
+    height: 4px;
+  }
+  .slider {
+    background: $blue-gray;
+    text-align: center;
+    h2 {
+      font-size: 25px;
+      font-family: $italic;
+      color: $green;
+      margin-top: 55px;
+    }
+    span {
+      font-size: 12px;
+      font-family: $regular;
+      color: $white;
+      margin-top: 10px;
+      display: block;
+    }
+    p {
+      font-size: 14px;
+      font-family: $regular;
+      color: $white;
+      margin-top: 30px;
+      text-align: left;
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: #9da5ad;
+      margin-top: 30px;
+    }
+  }
+  .bx-slider-wrapper{
+    position: relative;
+    .bx-wrapper{
+      width: 70%;
+    }
+    li{
+      max-height: 350px;
+      overflow: hidden;
+    }
+    img{
+      height: auto;
+      width: 100%;
+    }
+    .bx-next,
+    .bx-prev{
+      background: url("../img/sp-page-sl.jpg");
+      width: 52px;
+      height: 52px;
+      display: block;
+    }
+    .bx-next{
+      background-position: -52px 0px;
+      &:hover{
+        background-position: -52px -52px;
+      }
+    }
+    .bx-prev{
+      background-position: 0px 0px;
+      &:hover{
+        background-position: 0px -52px;
+      }
+    }
+    #slider-prev,
+    #slider-next{
+      position: absolute;
+      top: 50%;
+      margin-top: -26px;
+    }
+    #slider-next{
+      right: 0px;
+    }
+  }
+}
+
+.contact {
+  background: $blue-gray;
+  h5 {
+    font-size: 16px;
+    font-family: $italic;
+    color: $blue-gray;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    background: $green;
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  .row {
+    .col-xs-4,
+    .col-xs-8 {
+      margin-bottom: 20px;
+      p {
+        font-size: 13px;
+        font-family: $italic;
+        color: $green;
+      }
+      span {
+        font-size: 13px;
+        font-family: $regular;
+        color: $white;
+      }
+    }
+  }
+}
+
+.comment {
+  background: url("../img/bg-footer.jpg");
+  height: 408px;
+  h2 {
+    font-size: 18px;
+    font-family: $bold;
+    color: $white;
+    text-align: center;
+    background: $blue-gray;
+    padding: 20px 0px;
+  }
+  .col-xs-6 {
+    margin-top: 20px;
+    .forms {
+      @include clearfix();
+      textarea {
+        background: $blue-gray;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 12px;
+        height: 146px;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        text-indent: 12px;
+        background: $blue-gray;
+        border: 0px;
+        color: $green;
+        font-family: $bold;
+      }
+      button {
+        padding: 10px 32px;
+        background: $blue-gray;
+        border: 0px;
+        font-size: 16px;
+        font-family: $black;
+        color: $green;
+      }
+    }
+  }
+  .wrapper-coments{
+    h6{
+      font-size: 12px;
+      font-family: $regular;
+      color: $blue-gray;
+      margin-top: 35px;
+      display: inline-block;
+      margin-left: 186px;
+    }
+    .icon{
+      width: 53px;
+      height: 54px;
+      background: $blue-gray;
+      float: left;
+    }
+    span{
+      font-size: 16px;
+      font-family: $bold;
+      color: $blue-gray;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    p{
+      font-size: 14px;
+      font-family: $regular;
+      color: $blue-gray;
+      margin-left: 64px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  .line-coment{
+    height: 1px;
+    width: 456px;
+    background: $blue-gray;
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+}
+
