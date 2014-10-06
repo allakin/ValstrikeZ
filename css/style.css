@@ -957,12 +957,22 @@ header .col-xs-6:after {
 header .col-xs-6 .active {
   background: #96c332;
 }
-header .col-xs-6 li {
+header .col-xs-6 ul {
   float: right;
-  padding: 43px 13px;
 }
-header .col-xs-6 li:last-child {
-  margin-right: 0px;
+header .col-xs-6 ul:before, header .col-xs-6 ul:after {
+  content: " ";
+  display: table;
+}
+header .col-xs-6 ul:after {
+  clear: both;
+}
+header .col-xs-6 ul .active {
+  background: #96c332;
+}
+header .col-xs-6 li {
+  float: left;
+  padding: 43px 13px;
 }
 header .col-xs-6 li a {
   font-size: 16px;
@@ -971,7 +981,7 @@ header .col-xs-6 li a {
   text-transform: uppercase;
   text-decoration: none;
 }
-header .line-border {
+header .line-borders {
   background: #96c332;
   height: 4px;
 }
@@ -1161,4 +1171,45 @@ header .bx-slider-wrapper #slider-next {
   background: #2c3e50;
   margin-top: 24px;
   margin-bottom: 10px;
+}
+
+.blog-post {
+  background: #2c3e50;
+}
+.blog-post h2 {
+  font-size: 25px;
+  font-family: "bold", sans-serif;
+  color: #96c332;
+  text-align: center;
+  margin-top: 54px;
+  text-transform: uppercase;
+}
+.blog-post span {
+  color: #fff;
+  font-size: 12px;
+  font-family: "regular", sans-serif;
+  text-align: center;
+  display: block;
+}
+.blog-post .title-text {
+  color: #96c332;
+  font-family: "bold", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+.blog-post p {
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  font-family: "regular", sans-serif;
+}
+.blog-post .blog-imge {
+  overflow: hidden;
+  margin-bottom: 54px;
+  height: 347px;
+  width: 555px;
+  margin-left: 200px;
 }
