@@ -348,21 +348,24 @@ textarea:active {
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
   text-indent: -9999px;
-  display: block;
   width: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
   height: 10px;
-  margin: 0 5px;
   outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  margin-top: 30px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #000;
+  background: #96c332;
+  color: #2c3e50;
+  font-size: 16px;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
