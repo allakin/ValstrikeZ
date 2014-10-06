@@ -8,6 +8,7 @@
 @import "meta/jquery.bxslider";
 @import "meta/icons";
 
+//start-main
 .main {
   background: url("../img/bg-header.jpg");
   .menu {
@@ -81,13 +82,13 @@
       position: absolute;
     }
   }
-  .btn-wrapper{
+  .btn-wrapper {
     float: right;
     margin-right: 90px;
   }
 }
 
-.header-top-shadow{
+.header-top-shadow {
   position: absolute;
   height: 398px;
   left: 0px;
@@ -459,6 +460,9 @@
   }
 }
 
+//end-main
+
+//start-works
 header {
   a {
     text-decoration: none;
@@ -479,12 +483,16 @@ header {
     .active {
       background: $green;
     }
-    li {
+    ul {
       float: right;
-      padding: 43px 13px;
-      &:last-child {
-        margin-right: 0px;
+      @include clearfix();
+      .active {
+        background: $green;
       }
+    }
+    li {
+      float: left;
+      padding: 43px 13px;
       a {
         font-size: 16px;
         font-family: $italic;
@@ -494,7 +502,7 @@ header {
       }
     }
   }
-  .line-border {
+  .line-borders {
     background: $green;
     height: 4px;
   }
@@ -685,3 +693,48 @@ header {
   }
 }
 
+//end-works
+
+//start-blog
+.blog-post {
+  background: $blue-gray;
+  h2 {
+    font-size: 25px;
+    font-family: $bold;
+    color: $green;
+    text-align: center;
+    margin-top: 54px;
+    text-transform: uppercase;
+  }
+  span {
+    color: $white;
+    font-size: 12px;
+    font-family: $regular;
+    text-align: center;
+    display: block;
+  }
+  .title-text {
+    color: $green;
+    font-family: $bold;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 38px;
+    margin-bottom: 30px;
+  }
+  p{
+    margin-bottom: 30px;
+    color: $white;
+    text-align: left;
+    font-size: 14px;
+    font-family: $regular;
+  }
+  .blog-imge{
+    overflow: hidden;
+    margin-bottom: 54px;
+    height: 347px;
+    width: 555px;
+    margin-left: 200px;
+  }
+}
+
+//end-blog
