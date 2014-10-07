@@ -107,11 +107,13 @@
 
 .bx-wrapper .bx-prev {
   left: 10px;
+  margin-left: 377px;
   background: url(../img/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
   right: 10px;
+  margin-right: 377px;
   background: url(../img/controls.png) no-repeat -43px -32px;
 }
 
@@ -125,13 +127,12 @@
 
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
-  top: 50%;
-  margin-top: -16px;
   outline: 0;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
   z-index: 9999;
+  margin-top: 6px;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {

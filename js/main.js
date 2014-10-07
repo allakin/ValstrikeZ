@@ -26,6 +26,7 @@ $(document).ready(function(){
         minSlides: 1,
         maxSlides: 2,
         slideMargin: 10,
+        auto: true,
         mode: 'fade'
     });
 });
